@@ -24,9 +24,9 @@ main {
   width: 99%;
   height: 100%;
   padding: 1rem;
-  border: 6px solid pink;
+  border: 6px solid rgb(54, 21, 27);
   border-radius: 25px;
-  background-color: rgb(92, 140, 137);
+  background-color: rgb(32, 70, 68);
 }
 
 .scoreArea {
@@ -90,9 +90,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 3px solid whitesmoke;
-  border-radius: 15px;
-  background-color: rgb(92, 140, 137);
+  background-color: transparent;
   height: 100%;
   width: 75%;
 }
@@ -100,7 +98,7 @@ main {
 .diceAreaPlayer1 {
   display: flex;
   justify-content: center;
-  border: 2px solid whitesmoke;
+  background-color: transparent;
   width: 100%;
   height: 20%;
 }
@@ -108,7 +106,7 @@ main {
 .diceAreaPlayer2 {
   display: flex;
   justify-content: center;
-  border: 2px solid whitesmoke;
+  background-color: transparent;
   width: 100%;
   height: 20%;
 }
@@ -116,9 +114,9 @@ main {
 .diceThrowArea {
   display: flex;
   justify-content: center;
+  background-color: transparent;
   align-items: center;
   gap: 3rem;
-  border: 2px solid whitesmoke;
   width: 100%;
   height: 60%;
 }
@@ -126,13 +124,14 @@ main {
 .rollDiceDiv {
   display: flex;
   justify-content: center;
+  background-color: transparent;
 }
 .rollDicebutton {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(155, 162, 161);
-  border: 2px solid black;
+  background-color: rgb(157, 179, 175);
+  border: 3px solid black;
   border-radius: 10px;
   height: 3rem;
   width: 12em;
@@ -158,6 +157,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   background-color: whitesmoke;
+  border: 2px solid rgb(207, 83, 17);
   border-radius: 10px;
   height: 4rem;
   width: 4rem;
