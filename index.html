@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Yatzyy</title>
+  </head>
+  <body>
+    <main>
+      <section class="gameArea">
+        <section class="playArea">
+          <article class="diceAreaPlayer1"></article>
+          <article class="diceThrowArea">
+            <button class="dice" id="diceOne">
+              <p class="diceNumberStyle" id="diceNumber1"></p>
+            </button>
+            <button class="dice" id="diceTwo">
+              <p class="diceNumberStyle" id="diceNumber2"></p>
+            </button>
+            <button class="dice" id="diceThree">
+              <p class="diceNumberStyle" id="diceNumber3"></p>
+            </button>
+            <button class="dice" id="diceFour">
+              <p class="diceNumberStyle" id="diceNumber4"></p>
+            </button>
+            <button class="dice" id="diceFive">
+              <p class="diceNumberStyle" id="diceNumber5"></p>
+            </button>
+          </article>
+          <div class="rollDiceDiv">
+            <button class="rollDicebutton" id="rollDiceBtn">Roll Dice</button>
+          </div>
+          <article class="diceAreaPlayer2"></article>
+        </section>
+        <section class="spaceArea">
+          <article></article>
+        </section>
+        <section class="scoreArea">
+          <article class="labelArea">
+            <div class="inputAndScore">
+              <label class="labelInput" for="player1"></label>
+              <input class="input1" id="player1" type="text" />
+              <input class="input1" id="player2" type="text" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="ones1">Ones</label>
+              <input class="input1" id="ones1" type="number" />
+              <input class="input1" id="ones2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="twos1">Twos</label>
+              <input class="input1" id="twos1" type="number" />
+              <input class="input1" id="twos2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="threes1">Threes</label>
+              <input class="input1" id="threes1" type="number" />
+              <input class="input1" id="threes2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="fours1">Fours</label>
+              <input class="input1" id="fours1" type="number" />
+              <input class="input1" id="fours2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="fives1">Fives</label>
+              <input class="input1" id="fives1" type="number" />
+              <input class="input1" id="fives2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="sixes1">Sixes</label>
+              <input class="input1" id="sixes1" type="number" />
+              <input class="input1" id="sixes2" type="number" />
+            </div>
+            <div class="inputAndScore sum1">
+              <label class="labelInput" for="sumPartOne1">Sum</label>
+              <input class="input1" id="sumPartOne1" type="number" />
+              <input class="input1" id="sumPartOne2" type="number" />
+            </div>
+            <div class="inputAndScore bonus">
+              <label class="labelInput" for="bonus1">Bonus</label>
+              <input class="input1" id="bonus1" type="number" />
+              <input class="input1" id="bonus2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="onePair1">One pair</label>
+              <input class="input1" id="onePair1" type="number" />
+              <input class="input1" id="onePair2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="twoPair1">Two pair</label>
+              <input class="input1" id="twoPair1" type="number" />
+              <input class="input1" id="twoPair2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="threeOfAKind1"
+                >Three of a kind</label
+              >
+              <input class="input1" id="threeOfAKind1" type="number" />
+              <input class="input1" id="threeOfAKind2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="fourOfAkind1"
+                >Four of a kind</label
+              >
+              <input class="input1" id="fourOfAkind1" type="number" />
+              <input class="input1" id="fourOfAkind2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="fullHouse1">Full house</label>
+              <input class="input1" id="fullHouse1" type="number" />
+              <input class="input1" id="fullHouse2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="smallStraight1"
+                >Small straight</label
+              >
+              <input class="input1" id="smallStraight1" type="number" />
+              <input class="input1" id="smallStraight2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="largeStraight1"
+                >Large straight</label
+              >
+              <input class="input1" id="largeStraight1" type="number" />
+              <input class="input1" id="largeStraight2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="chance1">Chance</label>
+
+              <div class="input1" id="chance1" type="number">
+                <p class="scoreNumberStyle" id="chance"></p>
+              </div>
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="yatsy1">Yatsy</label>
+              <input class="input1" id="yatsy1" type="number" />
+              <input class="input1" id="yatsy2" type="number" />
+            </div>
+            <div class="inputAndScore">
+              <label class="labelInput" for="totalSum1">TOTAL SCORE</label>
+              <input class="input1" id="totalSum1" type="number" />
+              <input class="input1" id="totalSum2" type="number" />
+            </div>
+          </article>
+        </section>
+      </section>
+      <section class="instructionssArea" id="instructionsArea">
+        Instructions
+      </section>
+      <section class="settingsArea" id="settingsArea">Settings</section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

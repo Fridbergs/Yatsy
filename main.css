@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  background-color: rgb(0, 137, 129);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  gap: 2em;
+}
+
+.gameArea {
+  display: flex;
+  justify-content: space-evenly;
+  width: 99%;
+  height: 100%;
+  padding: 1rem;
+  border: 6px solid pink;
+  border-radius: 25px;
+  background-color: rgb(92, 140, 137);
+}
+
+.scoreArea {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+}
+
+.labelArea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  width: auto;
+}
+
+.inputAndScore {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 100%;
+  gap: 3px;
+  background-color: antiquewhite;
+  padding: 0.2em;
+  padding-right: 0.5em;
+}
+
+.labelInput {
+  display: flex;
+  width: 50%;
+  font-weight: 700;
+  padding-left: 5px;
+  align-items: start;
+  align-content: center;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.input1 {
+  display: flex;
+  height: 2rem;
+  width: 25%;
+  background-color: rgb(235, 225, 213);
+  text-align: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: x-small;
+  border: 2px solid;
+}
+
+.spaceArea {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  height: 100%;
+  width: 5%;
+}
+
+.playArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid whitesmoke;
+  border-radius: 15px;
+  background-color: rgb(92, 140, 137);
+  height: 100%;
+  width: 75%;
+}
+
+.diceAreaPlayer1 {
+  display: flex;
+  justify-content: center;
+  border: 2px solid whitesmoke;
+  width: 100%;
+  height: 20%;
+}
+
+.diceAreaPlayer2 {
+  display: flex;
+  justify-content: center;
+  border: 2px solid whitesmoke;
+  width: 100%;
+  height: 20%;
+}
+
+.diceThrowArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border: 2px solid whitesmoke;
+  width: 100%;
+  height: 60%;
+}
+
+.rollDiceDiv {
+  display: flex;
+  justify-content: center;
+}
+.rollDicebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(155, 162, 161);
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 3rem;
+  width: 12em;
+}
+
+.settingsArea {
+  display: flex;
+  justify-content: center;
+  border: 2px solid whitesmoke;
+  width: 100%;
+  height: 20vh;
+}
+
+.instructionssArea {
+  display: flex;
+  justify-content: center;
+  border: 2px solid whitesmoke;
+  width: 100%;
+  height: 20vh;
+}
+
+.dice {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  height: 4rem;
+  width: 4rem;
+}
+
+.diceNumberStyle {
+  background-color: transparent;
+  font-weight: bold;
+  font-size: x-large;
+  align-self: center;
+  color: red;
+}
+
+.scoreNumberStyle {
+  background-color: transparent;
+  font-weight: bold;
+  font-size: large;
+  align-self: center;
+  color: red;
+}
