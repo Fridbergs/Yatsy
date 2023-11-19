@@ -1,16 +1,50 @@
 //Få kontakt med tärning 1
 let dice1 = document.getElementById("diceNumber1");
-//Få kontakt med tärning 1
+//Få kontakt med tärning 2
 let dice2 = document.getElementById("diceNumber2");
-//Få kontakt med tärning 1
+//Få kontakt med tärning 3
 let dice3 = document.getElementById("diceNumber3");
-//Få kontakt med tärning 1
+//Få kontakt med tärning 4
 let dice4 = document.getElementById("diceNumber4");
-//Få kontakt med tärning 1
+//Få kontakt med tärning 5
 let dice5 = document.getElementById("diceNumber5");
 
-//Få kontakt med fältet ones för player 1
+//Få kontakt med fältet ones
+let ones = document.getElementById("ones");
+//Få kontakt med fältet twos
+let twos = document.getElementById("twos");
+//Få kontakt med fältet threes
+let threes = document.getElementById("threes");
+//Få kontakt med fältet fours
+let fours = document.getElementById("fours");
+//Få kontakt med fältet fives
+let fives = document.getElementById("fives");
+//Få kontakt med fältet sixes
+let sixes = document.getElementById("sixes");
+//Få kontakt med fältet sumPartOne
+let sumPartOne = document.getElementById("sumPartOne");
+//Få kontakt med fältet bonus
+let bonus = document.getElementById("bonus");
+//Få kontakt med fältet onePair
+let onePair = document.getElementById("onePair");
+//Få kontakt med fältet twoPair
+let twoPair = document.getElementById("twoPair");
+//Få kontakt med fältet threeOfAkind
+let threeOfAKind = document.getElementById("threeOfAKind");
+//Få kontakt med fältet fourOfAkind
+let fourOfAkind = document.getElementById("fourOfAkind");
+//Få kontakt med fältet fullHouse
+let fullHouse = document.getElementById("fullHouse");
+//Få kontakt med fältet smallStraight
+let smallStraight = document.getElementById("smallStraight");
+//Få kontakt med fältet largeStraight
+let largeStraight = document.getElementById("largeStraight");
+//Få kontakt med fältet chance
 let chance = document.getElementById("chance");
+//Få kontakt med fältet yatsy
+let yatsy = document.getElementById("yatsy");
+//Få kontakt med fältet totalSum
+let totalSum = document.getElementById("totalSum");
 
 //Få kontakt med fältet ones för player 1
 let ones1 = document.getElementById("ones1");
@@ -87,33 +121,15 @@ let totalSum2 = document.getElementById("totalSum2");
 //Få kontakt med knappen roll dice
 const rollDiceBtn = document.getElementById("rollDiceBtn");
 
+// array.forEach((element) => {});
+// array[(1, 2, 3, 4, 5, 6)];
+
+let rollNumber = 0;
+
+function checkRollNumber() {}
+
 // Function to roll a single die
-function rollDie() {
-  return Math.floor(Math.random() * 6) + 1;
-}
-
-//Tärning 1
-function rollDice1() {
-  return Math.floor(Math.random() * 6) + 1;
-}
-
-//Tärning 2
-function rollDice2() {
-  return Math.floor(Math.random() * 6) + 1;
-}
-
-//Tärning 3
-function rollDice3() {
-  return Math.floor(Math.random() * 6) + 1;
-}
-
-//Tärning 4
-function rollDice4() {
-  return Math.floor(Math.random() * 6) + 1;
-}
-
-//Tärning 5
-function rollDice5() {
+function randomizeNumber() {
   return Math.floor(Math.random() * 6) + 1;
 }
 
@@ -122,14 +138,9 @@ rollDiceBtn.addEventListener("click", function () {
   //function som räknar alla poäng
   function countPoints() {
     //Variabler som håller varje kastad tärnings resultat
-    let diceResult1 = rollDice1();
-    let diceResult2 = rollDice2();
-    let diceResult3 = rollDice3();
-    let diceResult4 = rollDice4();
-    let diceResult5 = rollDice5();
+    let diceResult1 = rollDie();
 
-    let totalPoints =
-      diceResult1 + diceResult2 + diceResult3 + diceResult4 + diceResult5;
+    let totalPoints = diceResult1;
     return totalPoints;
   }
 
@@ -143,10 +154,26 @@ rollDiceBtn.addEventListener("click", function () {
 function updateUI() {
   // Get the results of each die roll
   let result1 = rollDie();
-  let result2 = rollDie();
-  let result3 = rollDie();
-  let result4 = rollDie();
-  let result5 = rollDie();
+
+  //Adding the result from dice 1 to the different input divs
+  ones.textContent = result1;
+  twos.textContent = result1;
+  threes.textContent = result1;
+  fours.textContent = result1;
+  fives.textContent = result1;
+  sixes.textContent = result1;
+  sumPartOne.textContent = result1;
+  bonus.textContent = result1;
+  onePair.textContent = result1;
+  twoPair.textContent = result1;
+  threeOfAKind.textContent = result1;
+  fourOfAkind.textContent = result1;
+  fullHouse.textContent = result1;
+  smallStraight.textContent = result1;
+  largeStraight.textContent = result1;
+  chance.textContent = result1;
+  yatsy.textContent = result1;
+  totalSum.textContent = result1;
 
   // Update the HTML elements for player 1
   dice1.textContent = result1;
@@ -154,8 +181,35 @@ function updateUI() {
   dice3.textContent = result3;
   dice4.textContent = result4;
   dice5.textContent = result5;
-  chance.textContent = result1;
 }
+
+//function for adding all ones to the field One
+function addAllOnes() {
+  if ((rollDice1 = 1)) {
+    ones.textContent = result1 + result2 + result3;
+  } else {
+    ones.textContent = "funkar";
+  }
+}
+
+//function for adding all threes to the field One
+function addAllThrees() {}
+
+//function for adding all fours to the field One
+function addAllFours() {}
+
+//function for adding all fivesto the field One
+function addAllfives() {}
+
+//function for adding all sixes to the field One
+function addAllSixes() {}
+
+// A function that sums upp allt he points inside the one to six fields
+function sumUpPartOne() {}
+
+// A function that determines if the player should get a bonus
+function bonusSumUp() {}
+
 //skapa funktion som sparar tärningarna i dice area
 
 //function för att kasta de tärningar som inte ligger i dice area
