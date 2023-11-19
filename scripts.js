@@ -138,22 +138,16 @@ rollDiceBtn.addEventListener("click", function () {
   //function som räknar alla poäng
   function countPoints() {
     //Variabler som håller varje kastad tärnings resultat
-    let diceResult1 = rollDie();
-
-    let totalPoints = diceResult1;
-    return totalPoints;
+    let diceResult1 = randomizeNumber();
   }
 
-  //Variabel som ger tillbaka summan av poängen från kastad tärning
-  let points = countPoints();
-  console.log(points);
   updateUI();
 });
 
 //Funktion som slänger in tärningsresultatet i domen
 function updateUI() {
   // Get the results of each die roll
-  let result1 = rollDie();
+  let result1 = randomizeNumber();
 
   //Adding the result from dice 1 to the different input divs
   ones.textContent = result1;
